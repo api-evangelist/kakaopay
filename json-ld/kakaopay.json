@@ -1,0 +1,57 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "KakaoPay",
+  "description": "KakaoPay is a Korean mobile payment platform and fintech service by Kakao Corp providing REST APIs for payment processing, QR code payments, online checkout, subscription billing, money transfers, and financial product management.",
+  "url": "https://www.kakaopay.com",
+  "sameAs": [
+    "https://github.com/kakaopay",
+    "https://www.linkedin.com/company/kakaopay",
+    "https://x.com/kakaocorpglobal",
+    "https://tech.kakaopay.com"
+  ],
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "contactType": "developer support",
+    "url": "https://developers.kakaopay.com/docs"
+  },
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "KakaoPay APIs",
+    "itemListElement": [
+      {
+        "@type": "Offer",
+        "name": "KakaoPay Online Payment API",
+        "description": "REST API for integrating KakaoPay online payment functionality into PC and mobile web or app environments. Supports single payments, subscription billing, order inquiry, and payment cancellation.",
+        "url": "https://developers.kakaopay.com/docs/payment/online-payment/single-payment",
+        "category": "Payment"
+      },
+      {
+        "@type": "Offer",
+        "name": "KakaoPay Login API",
+        "description": "REST API providing KakaoPay authentication services including token issuance, token refresh, user information retrieval, and consent management.",
+        "url": "https://developers.kakaopay.com/docs",
+        "category": "Authentication"
+      },
+      {
+        "@type": "Offer",
+        "name": "KakaoPay Money Transfer API",
+        "description": "REST API for code-based money transfers, enabling users to send and receive money via generated links. Supports money transfer link generation, retrieval, deletion, bill-splitting settlements, and service deregistration.",
+        "url": "https://developers.kakaopay.com/docs",
+        "category": "Money Transfer"
+      },
+      {
+        "@type": "Offer",
+        "name": "KakaoPay Face Recognition API",
+        "description": "REST API providing facial detection and comparison capabilities for identity verification and authentication within KakaoPay financial services.",
+        "url": "https://developers.kakaopay.com/docs",
+        "category": "Biometrics"
+      }
+    ]
+  },
+  "subjectOf": {
+    "@type": "WebSite",
+    "name": "KakaoPay Developer Center",
+    "url": "https://developers.kakaopay.com/docs"
+  }
+}
