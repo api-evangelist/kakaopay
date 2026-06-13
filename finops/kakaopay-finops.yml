@@ -1,0 +1,22 @@
+name: KakaoPay FinOps
+description: KakaoPay provides financial operations tooling through the Kakao Developers app management console, enabling developers to monitor API usage, estimate costs, and set spending controls via configurable usage limits and a linked Biz Wallet.
+url: https://developers.kakaopay.com/docs/getting-started/applications/using-api
+tools:
+  - name: Paid API Usage History
+    description: Dashboard for tracking paid API consumption per application, showing paid usage, unit price, usage amount, total charges, VAT, and final billing amount. Accessible under Paid API > Paid API Usage History in the app management console.
+    url: https://developers.kakaopay.com
+  - name: Usage Limits Configuration
+    description: Controls for setting daily and monthly caps on paid API usage per application. Prevents unexpected charges by blocking API calls when configured limits are reached. Found under Paid API > General > Paid API usage limits.
+    url: https://developers.kakaopay.com
+  - name: Biz Wallet
+    description: Required payment mechanism for enabling paid APIs. Developers must create a Biz Wallet, attach a payment card, and connect it to their application. Monthly charges are automatically billed to the Biz Wallet around the 1st of each month.
+    url: https://developers.kakaopay.com
+cost_management:
+  billing_cycle: monthly
+  billing_date: around 1st of each month at 1 AM
+  currency: KRW (Korean Won)
+  vat_included: true
+  auto_billing: true
+  spending_controls:
+    daily_limit: configurable
+    monthly_limit: configurable

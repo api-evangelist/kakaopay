@@ -1,0 +1,94 @@
+aid: kakaopay
+name: KakaoPay
+description: KakaoPay is a Korean mobile payment platform and fintech service by Kakao Corp providing REST APIs for payment processing, QR code payments, online checkout, subscription billing, money transfers, and financial product management. The platform enables merchants and developers to integrate KakaoPay's payment infrastructure via secure REST APIs authenticated with admin keys or bearer tokens.
+image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+url: https://raw.githubusercontent.com/api-evangelist/kakaopay/refs/heads/main/apis.yml
+created: "2026-06-13"
+modified: "2026-06-13"
+specificationVersion: "0.19"
+tags:
+  - Payments
+  - Mobile Payments
+  - QR Code Payments
+  - Subscription Billing
+  - Money Transfer
+  - Fintech
+  - Korean
+  - REST API
+apis:
+  - name: KakaoPay Online Payment API
+    description: REST API for integrating KakaoPay online payment functionality into PC and mobile web or app environments. Supports single payments, subscription (recurring) billing, order inquiry, and payment cancellation. Uses admin key authentication via Authorization header.
+    image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    humanURL: https://developers.kakaopay.com/docs/payment/online-payment/single-payment
+    baseURL: https://open-api.kakaopay.com
+    tags:
+      - Online Payment
+      - Single Payment
+      - Subscription
+      - Payment Cancellation
+    properties:
+      - type: Documentation
+        url: https://developers.kakaopay.com/docs/payment/online-payment/single-payment
+  - name: KakaoPay Login API
+    description: REST API providing KakaoPay authentication services including token issuance, token refresh, user information retrieval, and consent management. Enables applications to authenticate users via their KakaoPay credentials.
+    image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    humanURL: https://developers.kakaopay.com/docs
+    baseURL: https://kapi.kakao.com
+    tags:
+      - Authentication
+      - Login
+      - OAuth
+      - Token
+    properties:
+      - type: Documentation
+        url: https://developers.kakaopay.com/docs
+  - name: KakaoPay Money Transfer API
+    description: REST API for code-based money transfers, enabling users to send and receive money via generated links. Supports money transfer link generation, retrieval, deletion, bill-splitting settlements, and service deregistration.
+    image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    humanURL: https://developers.kakaopay.com/docs
+    baseURL: https://open-api.kakaopay.com
+    tags:
+      - Money Transfer
+      - Remittance
+      - Bill Splitting
+    properties:
+      - type: Documentation
+        url: https://developers.kakaopay.com/docs
+  - name: KakaoPay Face Recognition API
+    description: REST API providing facial detection and comparison capabilities for identity verification and authentication within KakaoPay financial services.
+    image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    humanURL: https://developers.kakaopay.com/docs
+    baseURL: https://open-api.kakaopay.com
+    tags:
+      - Face Recognition
+      - Biometrics
+      - Identity Verification
+    properties:
+      - type: Documentation
+        url: https://developers.kakaopay.com/docs
+common:
+  - type: Website
+    url: https://www.kakaopay.com
+  - type: Documentation
+    url: https://developers.kakaopay.com/docs
+  - type: GitHubOrg
+    url: https://github.com/kakaopay
+  - type: LinkedIn
+    url: https://www.linkedin.com/company/kakaopay
+  - type: Blog
+    url: https://tech.kakaopay.com
+  - type: Pricing
+    url: https://developers.kakao.com/docs/latest/en/app-setting/paid-api
+  - type: StatusPage
+    url: https://developers.kakaopay.com
+  - type: X
+    url: https://x.com/kakaocorpglobal
+  - type: Plans
+    url: plans/kakaopay-plans-pricing.yml
+  - type: RateLimits
+    url: rate-limits/kakaopay-rate-limits.yml
+  - type: FinOps
+    url: finops/kakaopay-finops.yml
+maintainers:
+  - FN: Kin Lane
+    email: kin@apievangelist.com

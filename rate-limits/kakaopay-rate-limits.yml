@@ -1,0 +1,18 @@
+name: KakaoPay Rate Limits
+description: KakaoPay enforces API usage quotas managed through the Kakao Developers app management console. Developers can configure daily and monthly usage limits for their applications. When limits are exceeded, API calls are blocked until the quota resets.
+url: https://developers.kakaopay.com/docs/getting-started/api-common-guide/api-type
+limits:
+  - type: Daily Limit
+    description: Configurable daily cap on paid API consumption per application. Set in the app management page under Paid API > General > Paid API usage limits. API calls are blocked when the daily limit is exceeded.
+    scope: per application
+    configurable: true
+  - type: Monthly Limit
+    description: Configurable monthly cap on paid API consumption per application. Set in the app management page under Paid API > General > Paid API usage limits. API calls are blocked when the monthly limit is exceeded.
+    scope: per application
+    configurable: true
+notes:
+  - Both daily and monthly limits can be set independently
+  - Exceeding either limit blocks all API calls for that application
+  - Usage and billing details are visible in the Paid API Usage History dashboard
+  - Quota management applies to paid APIs such as KakaoTalk Share and Kakao Map
+  - Free quota is included; charges apply only to additional usage beyond the free tier

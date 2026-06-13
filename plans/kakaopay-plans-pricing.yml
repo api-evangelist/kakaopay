@@ -1,0 +1,23 @@
+name: KakaoPay Plans and Pricing
+description: KakaoPay operates a usage-based billing model for its paid APIs through Kakao Developers. Developers must create a Biz Wallet and connect it to their application before accessing paid API features. Monthly charges are automatically processed around the 1st of each month based on API consumption.
+url: https://developers.kakaopay.com/docs/getting-started/applications/using-api
+plans:
+  - name: Free Tier
+    description: Basic access to KakaoPay APIs with standard quota included at no cost for development and low-volume usage.
+    free: true
+    paid: false
+  - name: Paid API Usage
+    description: Usage-based billing for paid API services beyond the free quota. Charges are calculated per API call and billed monthly via a connected Biz Wallet. Developers can set daily and monthly usage limits to control costs.
+    free: false
+    paid: true
+    billing: monthly
+    unit: per API call
+    apis:
+      - KakaoTalk Share
+      - Kakao Map
+    notes:
+      - Biz Wallet must be created and connected before enabling paid APIs
+      - Daily and monthly caps can be configured in the app management console
+      - Charges include VAT
+      - Usage history and estimated billing available in the Paid API Usage History dashboard
+      - If daily or monthly limit is exceeded, API calls are blocked until limit resets
