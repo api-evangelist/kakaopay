@@ -67,6 +67,8 @@ apis:
       - type: Documentation
         url: https://developers.kakaopay.com/docs
 common:
+  - type: DomainSecurity
+    url: security/kakaopay-domain-security.yml
   - type: Website
     url: https://www.kakaopay.com
   - type: Documentation
