@@ -49,6 +49,10 @@ apis:
     tags:
       - Authentication
       - Login
+      - Token
+    tags_raw:
+      - Authentication
+      - Login
       - OAuth
       - Token
     properties:
