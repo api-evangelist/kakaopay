@@ -1,6 +1,17 @@
 aid: kakaopay
 name: KakaoPay
 description: KakaoPay is a Korean mobile payment platform and fintech service by Kakao Corp providing REST APIs for payment processing, QR code payments, online checkout, subscription billing, money transfers, and financial product management. The platform enables merchants and developers to integrate KakaoPay's payment infrastructure via secure REST APIs authenticated with admin keys or bearer tokens.
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: false
+  label: Hosted service · you call their endpoint
+  confidence: medium
+  source:
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 accessModel:
   pricing: freemium
   onboarding: unknown
