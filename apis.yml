@@ -60,7 +60,7 @@ apis:
     tags:
       - Authentication
       - Login
-      - Token
+      - Tokens
     tags_raw:
       - Authentication
       - Login
@@ -75,6 +75,10 @@ apis:
     humanURL: https://developers.kakaopay.com/docs
     baseURL: https://open-api.kakaopay.com
     tags:
+      - Money Transfer
+      - Remittances
+      - Bill Splitting
+    tags_raw:
       - Money Transfer
       - Remittance
       - Bill Splitting
