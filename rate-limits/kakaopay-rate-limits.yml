@@ -1,3 +1,7 @@
+# Provenance stamped 2026-10-07 (roadmap#943): written by an API Evangelist sweep (undated — the file carries no date and git cannot supply one), not
+# harvested from the provider. `method: generated` so the economics campaign may replace it with a
+# dated, verbatim transcription; every figure below is unverified until it does.
+method: generated
 name: KakaoPay Rate Limits
 description: KakaoPay enforces API usage quotas managed through the Kakao Developers app management console. Developers can configure daily and monthly usage limits for their applications. When limits are exceeded, API calls are blocked until the quota resets.
 url: https://developers.kakaopay.com/docs/getting-started/api-common-guide/api-type

@@ -1,3 +1,7 @@
+# Provenance stamped 2026-10-07 (roadmap#943): written by an API Evangelist sweep (undated — the file carries no date and git cannot supply one), not
+# harvested from the provider. `method: generated` so the economics campaign may replace it with a
+# dated, verbatim transcription; every figure below is unverified until it does.
+method: generated
 name: KakaoPay Plans and Pricing
 description: KakaoPay operates a usage-based billing model for its paid APIs through Kakao Developers. Developers must create a Biz Wallet and connect it to their application before accessing paid API features. Monthly charges are automatically processed around the 1st of each month based on API consumption.
 url: https://developers.kakaopay.com/docs/getting-started/applications/using-api
