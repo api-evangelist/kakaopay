@@ -24,6 +24,43 @@ edges:
     detected: '2026-10-21'
   detected_by: sweep-x402-micropayments.py
   first_seen: '2026-10-21'
+- partner_name: Korea MyData licensed operators (MyData Support Center participants)
+  partner: null
+  partner_match: register
+  type: register
+  channel: regulator-register
+  relationship: standard-participant
+  direction: partner-built
+  evidence: https://www.mydatacenter.or.kr:3441/myd/intro/sub3.do
+  category: Korean MyData operator licence (본인신용정보관리업, Credit Information Use and Protection Act)
+  contract_reference:
+    register: Korea MyData licensed operators (MyData Support Center participants)
+    spec_file: null
+    standard: null
+    role: licensed-participant
+    registrations:
+    - registered_name: 카카오페이
+      register_country: KR
+      matched_domain: kakaopay.com
+      matched_by: domain+local-verified
+      register_website: https://www.kakaopay.com
+      register_sector: fintech
+      identity: 'hand-verified: 카카오페이 is ''Kakao Pay'' (Hangul transliteration); the register links kakaopay.com,
+        which the kakaopay repo holds'
+    signal_note: 'participation only: listed by the MyData Support Center (Korea Credit Information Services, for
+      the FSC); no conformance certification is published'
+    detected_by: sweep-korea-mydata-operators.py
+    detected: '2026-10-22'
+    signals:
+    - signal: rate-cut-request-service-participant
+      source: https://www.mydatacenter.or.kr:3441/myd/bbsctt/notice1/notice/076e7a70-9d5c-4bad-9ee5-2bcb5153b6ed/35/bbsctt.do
+      as_of: '2026-08-18'
+    - signal: standard-api-v2.0-first-items-live
+      source: https://www.mydatacenter.or.kr:3441/myd/bbsctt/notice1/notice/37ebe6f6-b9ae-4692-9db2-44e5f434bbd3/36/bbsctt.do
+      as_of: '2023-03-31'
+      note: self-reported service status published by the support centre; not a certification
+  detected_by: sweep-korea-mydata-operators.py
+  first_seen: '2026-10-22'
 generated: '2026-10-21'
 method: searched
 source:
@@ -48,3 +85,7 @@ checked:
 - https://x402-list.com
 - https://x402.org/members/
 - https://x402scan.com
+- https://www.mydatacenter.or.kr:3441/myd/bbsctt/notice1/notice/076e7a70-9d5c-4bad-9ee5-2bcb5153b6ed/35/bbsctt.do
+- https://www.mydatacenter.or.kr:3441/myd/bbsctt/notice1/notice/37ebe6f6-b9ae-4692-9db2-44e5f434bbd3/36/bbsctt.do
+- https://www.mydatacenter.or.kr:3441/myd/index/index.do
+- https://www.mydatacenter.or.kr:3441/myd/intro/sub3.do

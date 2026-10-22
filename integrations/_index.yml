@@ -27,3 +27,40 @@
     detected: '2026-10-21'
   status: not-a-workflow
   arazzo: null
+- slug: kakaopay-korea-mydata-licensed-operators-mydata-support-center-participants
+  label: Korea MyData licensed operators (MyData Support Center participants)
+  partner_name: Korea MyData licensed operators (MyData Support Center participants)
+  category: Korean MyData operator licence (본인신용정보관리업, Credit Information Use and Protection Act)
+  type: register
+  channel: regulator-register
+  evidence: https://www.mydatacenter.or.kr:3441/myd/intro/sub3.do
+  source: edge
+  relationship: standard-participant
+  contract_reference:
+    register: Korea MyData licensed operators (MyData Support Center participants)
+    spec_file: null
+    standard: null
+    role: licensed-participant
+    registrations:
+    - registered_name: 카카오페이
+      register_country: KR
+      matched_domain: kakaopay.com
+      matched_by: domain+local-verified
+      register_website: https://www.kakaopay.com
+      register_sector: fintech
+      identity: 'hand-verified: 카카오페이 is ''Kakao Pay'' (Hangul transliteration); the register links kakaopay.com,
+        which the kakaopay repo holds'
+    signal_note: 'participation only: listed by the MyData Support Center (Korea Credit Information Services, for
+      the FSC); no conformance certification is published'
+    detected_by: sweep-korea-mydata-operators.py
+    detected: '2026-10-22'
+    signals:
+    - signal: rate-cut-request-service-participant
+      source: https://www.mydatacenter.or.kr:3441/myd/bbsctt/notice1/notice/076e7a70-9d5c-4bad-9ee5-2bcb5153b6ed/35/bbsctt.do
+      as_of: '2026-08-18'
+    - signal: standard-api-v2.0-first-items-live
+      source: https://www.mydatacenter.or.kr:3441/myd/bbsctt/notice1/notice/37ebe6f6-b9ae-4692-9db2-44e5f434bbd3/36/bbsctt.do
+      as_of: '2023-03-31'
+      note: self-reported service status published by the support centre; not a certification
+  status: not-a-workflow
+  arazzo: null
